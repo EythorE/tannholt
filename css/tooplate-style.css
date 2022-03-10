@@ -84,7 +84,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   a:hover, a:active, a:focus {
-    color: #a5c422;
+    color: #5bc0de;
     outline: none;
   }
 
@@ -107,7 +107,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .section-btn {
-    background: #a5c422;
+    background: #5bc0de;
     border: 0;
     border-radius: 3px;
     color: #ffffff;
@@ -273,7 +273,7 @@ http://www.tooplate.com/view/2098-health
   header span {
     font-size: 12px;
     line-height: 24px;
-    padding-top: 12px;
+    /*padding-top: 12px;*/
   }
 
   header a,
@@ -295,7 +295,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   header span i {
-    color: #a5c422;
+    color: #5bc0de;
     margin-right: 5px;
   }
 
@@ -319,7 +319,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .navbar-default .navbar-brand .fa {
-    color: #a5c422;
+    color: #5bc0de;
   }
 
   .navbar-default .navbar-nav li.appointment-btn {
@@ -327,7 +327,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   .navbar-default .navbar-nav li.appointment-btn a {
-    background: #a5c422;
+    background: #5bc0de;
     border-radius: 3px;
     color: #ffffff;
     font-weight: 600;
@@ -451,12 +451,21 @@ http://www.tooplate.com/view/2098-health
     height: 650px;
   }
 
+
   .slider .item-first {
-    background-image: url(../images/slider1.jpg);
+    background: url('../images/tannholt.png') no-repeat center;
+    background-size: contain;
   }
 
   .slider .item-second {
-    background-image: url(../images/slider2.jpg);
+    background: url('../images/stoll.jpg') no-repeat right;
+    background-size: auto 100%;
+  }
+
+  .slider img {
+    margin-right: auto;
+    height: 60%;
+    padding-bottom: 2em;
   }
 
   .slider .item-third {
@@ -469,7 +478,7 @@ http://www.tooplate.com/view/2098-health
   -----------------------------------------*/
 
   #about {
-    background: url('../images/about-bg.jpg') no-repeat top center;
+    background: url('../images/slider2.jpg') no-repeat center;
     background-size: cover;
     padding-top: 150px;
     padding-bottom: 150px;
@@ -501,6 +510,12 @@ http://www.tooplate.com/view/2098-health
   /*---------------------------------------
       TEAM MEMBERS              
   -----------------------------------------*/
+  #team {
+    background: url('../images/slider1.jpg') no-repeat bottom center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 
   .team-thumb {
     background-color: #f9f9f9;
@@ -570,7 +585,7 @@ http://www.tooplate.com/view/2098-health
   -----------------------------------------*/
 
   #service {
-    background: #a5c422;
+    background: #5bc0de;
   }
 
   #service h2,
@@ -590,7 +605,7 @@ http://www.tooplate.com/view/2098-health
     font-size: 50px;
     margin-bottom: 10px;
     background: #ffffff;
-    color: #a5c422;
+    color: #5bc0de;
     width: 120px;
     height: 120px;
     line-height: 120px;
@@ -777,7 +792,7 @@ http://www.tooplate.com/view/2098-health
   }
 
   #appointment button#cf-submit {
-    background: #a5c422;
+    background: #5bc0de;
     color: #ffffff;
     font-weight: 600;
     height: 55px;
@@ -975,7 +990,7 @@ http://www.tooplate.com/view/2098-health
     }
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 600px) {
     .slider .item {
       background-position: center;
     }

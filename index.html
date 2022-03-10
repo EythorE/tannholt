@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="is">
 <head>
 
-     <title>Health - Medical Website Template</title>
-<!--
+     <title>Tannholt</title>
+     <meta name="description" content="Tannlæknastofan Tannholt">
 
-Template 2098 Health
 
-http://www.tooplate.com/view/2098-health
-
--->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="Tooplate">
+     <meta name="keywords" content="Tannlæknir,Dentist,Tannlæknastofa">
+     <meta name="author" content="Eyþór Einarsson">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
      <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -25,6 +20,29 @@ http://www.tooplate.com/view/2098-health
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-style.css">
+
+     <!--
+     <meta> elements Open Graph protocol.
+     Enhance the appearance of the web page when it’s linked in a social media post:
+     1. a title for the content
+     2. the type of content being delivered
+     3. the canonical URL for the content
+     4. a description of the content
+     5. an image to associate with the content
+     -->
+     <meta property="og:title" content="A Basic HTML5 Template">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="tannholt.is">
+     <meta property="og:description" content="HTML5 test project.">
+     <meta property="og:image" content="images/tannholt.png">
+
+     <!-- icons for links to the site -->
+     <!--  <link rel="icon" href="./icon.svg" type="image/svg+xml"> -->
+     <link rel="icon" href="./favicon.svg">
+     <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+
+     <!-- blue T icon-->
+     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -43,16 +61,21 @@ http://www.tooplate.com/view/2098-health
      <header>
           <div class="container">
                <div class="row">
-
                     <div class="col-md-4 col-sm-5">
-                         <p>Welcome to a Professional Health Care</p>
+                         <p>Tannlæknastofan Tannholt <span class="location-icon"><a href="#google-map">
+                              <i class="fa fa-map-marker"></i> Þverholt 7, Mosfellsbær</a></span><p>
                     </div>
-                         
                     <div class="col-md-8 col-sm-7 text-align-right">
-                         <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
-                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
-                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></span>
+                         <span class="phone-icon"><i class="fa fa-phone"></i> 566-6104</span>
+                         <span class="phone-icon"><i class="fa fa-mobile"></i> 789-8270</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 9:00 - 16:00 (Virka daga)</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> katrintannsi@gmail.com</span>
+                         <a href="https://www.facebook.com/tannholt" class="fa fa-facebook-square" attr="facebook icon"></a>
+                         <!--<a href="#" class="fa fa-twitter"></a>
+                         <a href="#" class="fa fa-instagram"></a>-->
+                         </ul>
                     </div>
+
 
                </div>
           </div>
@@ -71,18 +94,16 @@ http://www.tooplate.com/view/2098-health
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Center</a>
+                    <a href="#top" class="navbar-brand"><i class="iconify" data-icon="noto:letter-t"></i>annholt</a>
                </div>
 
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#top" class="smoothScroll">Home</a></li>
-                         <li><a href="#about" class="smoothScroll">About Us</a></li>
-                         <li><a href="#team" class="smoothScroll">Doctors</a></li>
-                         <li><a href="#news" class="smoothScroll">News</a></li>
-                         <li><a href="#google-map" class="smoothScroll">Contact</a></li>
-                         <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
+                         <li><a href="#about" class="smoothScroll">Um okkur</a></li>
+                         <li><a href="#team" class="smoothScroll">Starfsfólk</a></li>
+                         <li><a href="#google-map" class="smoothScroll">Staðsetning</a></li>
+                         <li class="appointment-btn"><a href="#appointment">Hafa samband</a></li>
                     </ul>
                </div>
 
@@ -99,29 +120,14 @@ http://www.tooplate.com/view/2098-health
                               <div class="item item-first">
                                    <div class="caption">
                                         <div class="col-md-offset-1 col-md-10">
-                                             <h3>Let's make your life happier</h3>
-                                             <h1>Healthy Living</h1>
-                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
                                         </div>
                                    </div>
                               </div>
-
                               <div class="item item-second">
                                    <div class="caption">
                                         <div class="col-md-offset-1 col-md-10">
-                                             <h3>Aenean luctus lobortis tellus</h3>
-                                             <h1>New Lifestyle</h1>
-                                             <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
-                                        </div>
-                                   </div>
-                              </div>
-
-                              <div class="item item-third">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <h3>Pellentesque nec libero nisi</h3>
-                                             <h1>Your Health Benefits</h1>
-                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                                             <img class="clearcorrect" src="https://www.straumann.com/content/dam/sites/clearcorrect/xy/website-redesign/ClearCorrect_MainLogoV4.svg"/>
+                                             <a href="https://www.straumann.com/clearcorrect/en/patients.html" class="section-btn btn btn-default btn-blue smoothScroll">Lesa meira</a>
                                         </div>
                                    </div>
                               </div>
@@ -136,10 +142,10 @@ http://www.tooplate.com/view/2098-health
      <section id="about">
           <div class="container">
                <div class="row">
-
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your <i class="fa fa-h-square"></i>ealth Center</h2>
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Velkominn í <i class="iconify" data-icon="noto:letter-t"></i>annholt</h2>
+                              <!--
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
                                    <p>Aenean luctus lobortis tellus, vel ornare enim molestie condimentum. Curabitur lacinia nisi vitae velit volutpat venenatis.</p>
                                    <p>Sed a dignissim lacus. Quisque fermentum est non orci commodo, a luctus urna mattis. Ut placerat, diam a tempus vehicula.</p>
@@ -151,6 +157,7 @@ http://www.tooplate.com/view/2098-health
                                         <p>General Principal</p>
                                    </figcaption>
                               </figure>
+                              -->
                          </div>
                     </div>
                     
@@ -166,13 +173,13 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Doctors</h2>
+                              <h2 class="wow fadeInUp" data-wow-delay="0.1s">Tannlæknar og starfsfólk</h2>
                          </div>
                     </div>
 
                     <div class="clearfix"></div>
 
-                    <div class="col-md-4 col-sm-6">
+                    <!-- <div class="col-md-4 col-sm-6">
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
                               <img src="images/team-image1.jpg" class="img-responsive" alt="">
 
@@ -231,152 +238,11 @@ http://www.tooplate.com/view/2098-health
                                    </div>
 
                          </div>
-                    </div>
+                    </div> -->
                     
                </div>
           </div>
      </section>
-
-
-     <!-- NEWS -->
-     <section id="news" data-stellar-background-ratio="2.5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <!-- SECTION TITLE -->
-                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                              <h2>Latest News</h2>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image1.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>March 08, 2018</span>
-                                   <h3><a href="news-detail.html">About Amazing Technology</a></h3>
-                                   <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Jeremie Carlson</h5>
-                                             <p>CEO / Founder</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image2.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>February 20, 2018</span>
-                                   <h3><a href="news-detail.html">Introducing a new healing process</a></h3>
-                                   <p>Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Jason Stewart</h5>
-                                             <p>General Director</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <!-- NEWS THUMB -->
-                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
-                              <a href="news-detail.html">
-                                   <img src="images/news-image3.jpg" class="img-responsive" alt="">
-                              </a>
-                              <div class="news-info">
-                                   <span>January 27, 2018</span>
-                                   <h3><a href="news-detail.html">Review Annual Medical Research</a></h3>
-                                   <p>Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.</p>
-                                   <div class="author">
-                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
-                                        <div class="author-info">
-                                             <h5>Andrio Abero</h5>
-                                             <p>Online Advertising</p>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- MAKE AN APPOINTMENT -->
-     <section id="appointment" data-stellar-background-ratio="3">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-6 col-sm-6">
-                         <img src="images/appointment-image.jpg" class="img-responsive" alt="">
-                    </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- CONTACT FORM HERE -->
-                         <form id="appointment-form" role="form" method="post" action="#">
-
-                              <!-- SECTION TITLE -->
-                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                   <h2>Make an appointment</h2>
-                              </div>
-
-                              <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="date">Select Date</label>
-                                        <input type="date" name="date" value="" class="form-control">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="select">Select Department</label>
-                                        <select class="form-control">
-                                             <option>General Health</option>
-                                             <option>Cardiology</option>
-                                             <option>Dental</option>
-                                             <option>Medical Research</option>
-                                        </select>
-                                   </div>
-
-                                   <div class="col-md-12 col-sm-12">
-                                        <label for="telephone">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
-                                        <label for="Message">Additional Message</label>
-                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
-                                   </div>
-                              </div>
-                        </form>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
 
      <!-- GOOGLE MAP -->
      <section id="google-map">
@@ -386,65 +252,81 @@ http://www.tooplate.com/view/2098-health
             3. Click "Share" and choose "Embed map" tab
             4. Copy only URL and paste it within the src="" field below
 	-->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-     </section>           
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1738.5278498329017!2d-21.702419783227363!3d64.16753898360466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d676bf70a9afd9%3A0xe88840d871ecbd03!2zw552ZXJob2x0IDcsIE1vc2ZlbGxzYsOmcg!5e0!3m2!1sen!2sis!4v1646698860773!5m2!1sen!2sis" width="100%" height="800" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>
 
+          <!-- MAKE AN APPOINTMENT -->
+          <section id="appointment" data-stellar-background-ratio="3">
+               <div class="container">
+                    <div class="row">
+     
+                         <div class="col-md-3 col-sm-6">
+                         </div>
+     
+                         <div class="col-md-6 col-sm-6">
+                              <!-- CONTACT FORM HERE -->
+                              <form id="appointment-form" role="form" method="post" action="#">
+     
+                                   <!-- SECTION TITLE -->
+                                   <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                        <h2>Hafa samband</h2>
+                                   </div>
+     
+                                   <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                        <div class="col-md-6 col-sm-6">
+                                             <label for="name">Nafn</label>
+                                             <input type="text" class="form-control" id="name" name="name" placeholder="Nafn">
+                                        </div>
+     
+                                        <div class="col-md-6 col-sm-12">
+                                             <label for="email">Email</label>
+                                             <input type="email" class="form-control" id="email" name="email" placeholder="tölvupóstfang">
+                                        </div>
+     
+                                        <div class="col-md-12 col-sm-12">
+                                             <label for="telephone">Sími</label>
+                                             <input type="tel" class="form-control" id="phone" name="phone" placeholder="sími">
+                                             <label for="Message">Skilaboð</label>
+                                             <textarea class="form-control" rows="5" id="message" name="message" placeholder="Skildu eftir skilaboð og við höfum samband"></textarea>
+                                             <button type="submit" class="form-control" id="cf-submit" name="submit">Óvirkt, í vinnlu</button>
+                                        </div>
+                                   </div>
+                             </form>
+                         </div>
+     
+                    </div>
+               </div>
+          </section>
 
      <!-- FOOTER -->
      <footer data-stellar-background-ratio="5">
           <div class="container">
                <div class="row">
-
+                    <div class="col-md-3 col-sm-4"></div>
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb"> 
-                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
-                              <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat ultricies.</p>
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Starfsemi</h4>
+                              <p>Tannholt er staðsett í Þverholti 7 í Mosfellsbæ.<br>Allar almennar tannlækningar eru stundaðar á stofunni. Tímapantanir í síma 566-6104 alla virka daga eða í síma 789-8270 utan opnunartíma.</p>
 
                               <div class="contact-info">
-                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+                                   <p><i class="fa fa-phone"></i> 566-6104</p>
+                                   <p><i class="fa fa-envelope-o"></i> katrintannsi@gmail.com</p>
                               </div>
                          </div>
                     </div>
-
-                    <div class="col-md-4 col-sm-4"> 
-                         <div class="footer-thumb"> 
-                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
-                              <div class="latest-stories">
-                                   <div class="stories-image">
-                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
-                                   </div>
-                                   <div class="stories-info">
-                                        <a href="#"><h5>Amazing Technology</h5></a>
-                                        <span>March 08, 2018</span>
-                                   </div>
-                              </div>
-
-                              <div class="latest-stories">
-                                   <div class="stories-image">
-                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
-                                   </div>
-                                   <div class="stories-info">
-                                        <a href="#"><h5>New Healing Process</h5></a>
-                                        <span>February 20, 2018</span>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
                     <div class="col-md-4 col-sm-4"> 
                          <div class="footer-thumb">
                               <div class="opening-hours">
-                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
-                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
-                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
-                                   <p>Sunday <span>Closed</span></p>
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opnunartími</h4>
+                                   <p>Mánudaga - föstudaga <span>09:00 - 16:00</span></p>
+
+                                   <p>Sunnudaga <span>Lokað</span></p>
                               </div> 
 
                               <ul class="social-icon">
-                                   <li><a href="https://www.facebook.com/tooplate" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                   <li><a href="#" class="fa fa-twitter"></a></li>
-                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                                   <li><a href="https://www.facebook.com/tannholt" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <!--<li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>-->
                               </ul>
                          </div>
                     </div>
@@ -452,24 +334,9 @@ http://www.tooplate.com/view/2098-health
                     <div class="col-md-12 col-sm-12 border-top">
                          <div class="col-md-4 col-sm-6">
                               <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2017 Your Company 
-                                   
-                                   | Design: <a href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
+                                   <p>Copyright &copy; 2022 Katrín Rós Ragnarsdóttir</p>
                               </div>
                          </div>
-                         <div class="col-md-6 col-sm-6">
-                              <div class="footer-link"> 
-                                   <a href="#">Laboratory Tests</a>
-                                   <a href="#">Departments</a>
-                                   <a href="#">Insurance Policy</a>
-                                   <a href="#">Careers</a>
-                              </div>
-                         </div>
-                         <div class="col-md-2 col-sm-2 text-align-center">
-                              <div class="angle-up-btn"> 
-                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
-                              </div>
-                         </div>   
                     </div>
                     
                </div>
