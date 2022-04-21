@@ -266,7 +266,7 @@
      
                          <div class="col-md-6 col-sm-6">
                               <!-- CONTACT FORM HERE -->
-                              <form id="appointment-form" role="form" method="post" action="#">
+                              <form id="form">
      
                                    <!-- SECTION TITLE -->
                                    <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
@@ -276,20 +276,21 @@
                                    <div class="wow fadeInUp" data-wow-delay="0.8s">
                                         <div class="col-md-6 col-sm-6">
                                              <label for="name">Nafn</label>
-                                             <input type="text" class="form-control" id="name" name="name" placeholder="Nafn">
+                                             <input type="text" class="form-control" id="from_name" name="name" placeholder="Nafn">
                                         </div>
      
                                         <div class="col-md-6 col-sm-12">
                                              <label for="email">Email</label>
-                                             <input type="email" class="form-control" id="email" name="email" placeholder="tölvupóstfang">
+                                             <input type="email" class="form-control" id="from_email" name="email" placeholder="tölvupóstfang">
                                         </div>
      
                                         <div class="col-md-12 col-sm-12">
                                              <label for="telephone">Sími</label>
-                                             <input type="tel" class="form-control" id="phone" name="phone" placeholder="sími">
+                                             <input type="tel" class="form-control" id="from_phone"" name="phone" placeholder="sími">
                                              <label for="Message">Skilaboð</label>
                                              <textarea class="form-control" rows="5" id="message" name="message" placeholder="Skildu eftir skilaboð og við höfum samband"></textarea>
-                                             <button type="submit" class="form-control" id="cf-submit" name="submit">Óvirkt, í vinnlu</button>
+                                             <!--<button type="submit" class="form-control" id="button" name="button">Senda skilaboð</button>-->
+                                             <input type="submit" class="form-control" id="button" value="Senda skilaboð" >
                                         </div>
                                    </div>
                              </form>
@@ -353,6 +354,12 @@
      <script src="js/smoothscroll.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
-
+     <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+     </script>
+     <script type="text/javascript">
+          emailjs.init('Bw56heIRu83bIhU0L')
+     </script>
+     <script src="js/skilabod.js"></script>
 </body>
 </html>
