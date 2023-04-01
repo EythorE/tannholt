@@ -525,6 +525,13 @@ http://www.tooplate.com/view/2098-health
     cursor: pointer;
   }
 
+  .team-box {
+    min-height: 140px; /* Adjust the height to your needs */
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+  }
+
   .team-info {
     padding: 20px 30px 0 30px;
   }
