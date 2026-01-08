@@ -88,7 +88,6 @@
      <!-- MENU -->
      <section class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
-
                <div class="navbar-header">
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                          <span class="icon icon-bar"></span>
@@ -96,9 +95,11 @@
                          <span class="icon icon-bar"></span>
                     </button>
 
-                    <!-- lOGO TEXT HERE -->
-                    <!-- <a href="#top" class="navbar-brand"><i class="iconify" data-icon="noto:letter-t"></i>annholt</a> -->
-                    <a href="#top" class="navbar-brand">Tannholt</a>
+                    <!-- lOGO IMAGE & SLOGAN -->
+                    <a href="#top" class="navbar-brand">
+                         <img src="images/tannholt_banner.jpg" alt="Tannholt" style="height: 40px; display: inline-block; vertical-align: middle;">
+                         <small style="display: block; font-size: 10px; letter-spacing: 0; font-weight: normal; color: #757575;">brostu betur með tannholti</small>
+                    </a>
                </div>
 
                <!-- MENU LINKS -->
@@ -110,33 +111,25 @@
                          <li class="appointment-btn"><a href="#appointment">Hafa samband</a></li>
                     </ul>
                </div>
-
           </div>
      </section>
 
 
-     <!-- HOME -->
-     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+     <!-- HOME / CLEARCORRECT -->
+     <section id="home" class="slider">
           <div class="container">
-               <div class="row">
-
-                         <div class="owl-carousel owl-theme">
-                              <!-- <div class="item item-first">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                        </div>
-                                   </div>
-                              </div> -->
-                              <div class="item item-second">
-                                   <div class="caption">
-                                        <div class="col-md-offset-1 col-md-10">
-                                             <img class="clearcorrect" src="https://www.straumann.com/content/dam/sites/clearcorrect/xy/website-redesign/ClearCorrect_MainLogoV4.svg"/>
-                                             <a href="https://www.straumann.com/clearcorrect/en/patients.html" class="section-btn btn btn-default btn-blue smoothScroll">Lesa meira</a>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-
+               <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
+                    <!-- Left Side: ClearCorrect Content -->
+                    <div class="col-md-6 col-sm-12 text-center">
+                         <img class="clearcorrect" src="https://www.straumann.com/content/dam/sites/clearcorrect/xy/website-redesign/ClearCorrect_MainLogoV4.svg" style="max-width: 300px; margin: 0 auto 20px auto;"/>
+                         <h3 style="color: #393939; margin-bottom: 20px; text-transform: none;">Brostu betur með Tannholti</h3>
+                         <a href="https://www.straumann.com/clearcorrect/en/patients.html" class="section-btn btn btn-default btn-blue">Læra meira um ClearCorrect</a>
+                    </div>
+                    
+                    <!-- Right Side: Chair Image -->
+                    <div class="col-md-6 col-sm-12">
+                         <img src="images/stoll.jpg" class="img-responsive" alt="Tannlæknastóll" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    </div>
                </div>
           </div>
      </section>
@@ -256,60 +249,48 @@
           </div>
      </section>
 
-     <!-- GOOGLE MAP -->
-     <section id="google-map">
-     <!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-	-->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1738.5278498329017!2d-21.702419783227363!3d64.16753898360466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d676bf70a9afd9%3A0xe88840d871ecbd03!2zw552ZXJob2x0IDcsIE1vc2ZlbGxzYsOmcg!5e0!3m2!1sen!2sis!4v1646698860773!5m2!1sen!2sis" width="100%" height="800" frameborder="0" style="border:0" allowfullscreen></iframe>
+     !-- GOOGLE MAP (Resized and Bordered) -->
+     <section id="google-map" style="padding: 40px 0;">
+          <div class="container">
+               <div style="border: 5px solid #f2f2f2; border-radius: 10px; overflow: hidden;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1738.5278498329017!2d-21.702419783227363!3d64.16753898360466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d676bf70a9afd9%3A0xe88840d871ecbd03!2zw552ZXJob2x0IDcsIE1vc2ZlbGxzYsOmcg!5e0!3m2!1sen!2sis!4v1646698860773!5m2!1sen!2sis" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+               </div>
+          </div>
      </section>
 
-          <!-- MAKE AN APPOINTMENT -->
-          <section id="appointment" data-stellar-background-ratio="3">
-               <div class="container">
-                    <div class="row">
-     
-                         <div class="col-md-3 col-sm-6">
-                         </div>
-     
-                         <div class="col-md-6 col-sm-6">
-                              <!-- CONTACT FORM HERE -->
-                              <form id="form">
-     
-                                   <!-- SECTION TITLE -->
-                                   <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                        <h2>Hafa samband</h2>
+     <!-- MAKE AN APPOINTMENT (Validation added) -->
+     <section id="appointment">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <form id="form">
+                              <div class="section-title">
+                                   <h2>Hafa samband</h2>
+                              </div>
+                              <div class="row">
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">Nafn</label>
+                                        <input type="text" class="form-control" id="from_name" name="name" placeholder="Nafn" required>
                                    </div>
-     
-                                   <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                        <div class="col-md-6 col-sm-6">
-                                             <label for="name">Nafn</label>
-                                             <input type="text" class="form-control" id="from_name" name="name" placeholder="Nafn">
-                                        </div>
-     
-                                        <div class="col-md-6 col-sm-12">
-                                             <label for="email">Email</label>
-                                             <input type="email" class="form-control" id="from_email" name="email" placeholder="tölvupóstfang">
-                                        </div>
-     
-                                        <div class="col-md-12 col-sm-12">
-                                             <label for="telephone">Sími</label>
-                                             <input type="tel" class="form-control" id="from_phone"" name="phone" placeholder="sími">
-                                             <label for="Message">Skilaboð</label>
-                                             <textarea class="form-control" rows="5" id="message" name="message" placeholder="Skildu eftir skilaboð og við höfum samband"></textarea>
-                                             <!--<button type="submit" class="form-control" id="button" name="button">Senda skilaboð</button>-->
-                                             <input type="submit" class="form-control" id="button" value="Senda skilaboð" >
-                                        </div>
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="from_email" name="email" placeholder="tölvupóstfang" required>
                                    </div>
-                             </form>
-                         </div>
-     
+                                   <div class="col-md-12 col-sm-12">
+                                        <label for="telephone">Sími</label>
+                                        <input type="tel" class="form-control" id="from_phone" name="phone" placeholder="sími" required>
+                                        
+                                        <label for="Message">Skilaboð</label>
+                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Skildu eftir skilaboð"></textarea>
+                                        
+                                        <input type="submit" class="form-control" id="button" value="Senda skilaboð">
+                                   </div>
+                              </div>
+                         </form>
                     </div>
                </div>
-          </section>
+          </div>
+     </section>
 
      <!-- FOOTER -->
      <footer data-stellar-background-ratio="5">
