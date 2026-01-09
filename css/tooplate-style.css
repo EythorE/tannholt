@@ -14,7 +14,6 @@ html, body {
     overflow-x: hidden; /* Hard fix for horizontal scrolling */
     position: relative;
     color: #555;
-    min-height: 100vh; /* Prevent layout shift */
 }
 
 /* Ensure all boxes fit inside the screen */
