@@ -1,149 +1,48 @@
 <!DOCTYPE html>
 <html lang="is">
 <head>
-
      <title>Tannholt</title>
-     <meta name="description" content="Tannlæknastofan Tannholt">
-
      <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="keywords" content="Tannlæknir,Dentist,Tannlæknastofa">
-     <meta name="author" content="Eyþór Einarsson">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+     
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/font-awesome.min.css">
      <link rel="stylesheet" href="css/animate.css">
-     <link rel="stylesheet" href="css/owl.carousel.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-     <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-style.css">
 
-     <meta property="og:title" content="Tannlæknastofan Tannholt">
-     <meta property="og:type" content="website">
-     <meta property="og:url" content="tannholt.is">
-     <meta property="og:description" content="Tannlæknastofan Tannholt í Mosfellsbæ.">
-     <meta property="og:image" content="images/tannholt.png">
-
      <link rel="icon" href="./favicon.svg">
-
      <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-
-     <style>
-          /* Header Fix: Name + Location Left, Others Right */
-          header {
-               background: #f9f9f9;
-               border-bottom: 1px solid #eee;
-               padding: 10px 0;
-          }
-          header .container .header-flex {
-               display: flex;
-               justify-content: space-between;
-               align-items: center;
-               flex-wrap: nowrap;
-               font-size: 13px; /* Slightly larger as requested */
-          }
-          header .left-side {
-               display: flex;
-               align-items: center;
-               white-space: nowrap;
-          }
-          header .right-side {
-               display: flex;
-               align-items: center;
-               white-space: nowrap;
-          }
-          header .brand-name {
-               font-weight: 600;
-               color: #272727;
-               margin-right: 15px;
-          }
-          header span {
-               padding: 0 10px;
-               color: #757575;
-          }
-          header i {
-               color: #5bc0de;
-               margin-right: 5px;
-          }
-          header a { color: #757575; }
-
-          /* Footer Fix: Centered and Pulled together */
-          footer .footer-flex-container {
-               display: flex;
-               justify-content: center;
-               align-items: flex-start;
-               gap: 60px; /* Pulls the two blocks closer together */
-               margin-top: 20px;
-          }
-          .footer-contact-link {
-               display: block;
-               margin-bottom: 12px;
-               color: #bbb;
-               font-size: 14px;
-               transition: 0.3s;
-          }
-          .footer-contact-link:hover { color: #5bc0de; }
-          .footer-contact-link i {
-               background: #393939;
-               border-radius: 100%;
-               color: #ffffff;
-               font-size: 14px;
-               width: 32px;
-               height: 32px;
-               line-height: 32px;
-               text-align: center;
-               margin-right: 10px;
-          }
-
-          @media (max-width: 991px) {
-               header .header-flex { flex-wrap: wrap; justify-content: center; text-align: center; }
-               footer .footer-flex-container { flex-direction: column; align-items: center; gap: 30px; }
-               header .left-side, header .right-side { margin: 5px 0; }
-          }
-     </style>
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
      <!-- PRE LOADER -->
      <section class="preloader">
-          <div class="spinner">
-               <span class="spinner-rotate"></span>
-          </div>
+          <div class="spinner"><span class="spinner-rotate"></span></div>
      </section>
 
-     <!-- facebook plugin -->
      <div id="fb-root"></div>
      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="D4g59AVz"></script>
-
 
      <!-- HEADER -->
      <header>
           <div class="container">
                <div class="header-flex">
-                    <!-- Left: Name and Location follow directly -->
                     <div class="left-side">
                          <span class="brand-name">Tannlæknastofan Tannholt</span>
-                         <span class="location-icon">
-                              <a href="#google-map"><i class="fa fa-map-marker"></i> Þverholt 7, Mosfellsbær</a>
-                         </span>
+                         <span><a href="#google-map"><i class="fa fa-map-marker"></i> Þverholt 7, Mosfellsbær</a></span>
                     </div>
-
-                    <!-- Right: Contact info and Facebook right aligned -->
                     <div class="right-side">
-                         <span class="phone-icon"><i class="fa fa-phone"></i> 566-6104</span>
-                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 9:00 - 16:00 (Virka daga)</span>
-                         <span class="email-icon"><i class="fa fa-envelope-o"></i> tannholt@tannholt.is</span>
+                         <span><i class="fa fa-phone"></i> 566-6104</span>
+                         <span><i class="fa fa-calendar-plus-o"></i> 9:00 - 16:00 (Virka daga)</span>
+                         <span><i class="fa fa-envelope-o"></i> tannholt@tannholt.is</span>
                          <span><a href="https://www.facebook.com/tannholt" class="fa fa-facebook-square"></a></span>
                     </div>
                </div>
           </div>
      </header>
 
-
      <!-- MENU -->
-     <section class="navbar navbar-default navbar-static-top" role="navigation">
+     <nav class="navbar navbar-default navbar-static-top" role="navigation">
           <div class="container">
                <div class="navbar-header">
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -152,10 +51,9 @@
                          <span class="icon icon-bar"></span>
                     </button>
                     <a href="#top" class="navbar-brand">
-                         <img src="images/tannholt_banner.jpg" alt="Tannholt" style="height: 50px; width: auto; object-fit: contain;">
+                         <img src="images/tannholt_banner.jpg" alt="Tannholt">
                     </a>
                </div>
-
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                          <li><a href="#about" class="smoothScroll">Starfsfólk</a></li>
@@ -164,101 +62,79 @@
                     </ul>
                </div>
           </div>
-     </section>
-
+     </nav>
 
      <!-- HOME / CLEARCORRECT -->
-     <section id="home" style="padding: 80px 0; background: #fcfcfc;">
+     <section id="home">
           <div class="container">
-               <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
+               <div class="row flex-center">
                     <div class="col-md-6 col-sm-12 text-center">
-                         <img src="https://www.straumann.com/content/dam/sites/clearcorrect/xy/website-redesign/ClearCorrect_MainLogoV4.svg" style="max-width: 250px; margin-bottom: 10px;" alt="ClearCorrect Logo"/>
-                         <h3 style="color: #4267b2; font-style: italic; margin-bottom: 25px; font-weight: 400;">brostu betur með tannholti</h3>
-                         <a href="https://www.straumann.com/clearcorrect/en/patients.html" class="section-btn btn btn-default btn-blue">Læra meira um ClearCorrect</a>
+                         <img src="https://www.straumann.com/content/dam/sites/clearcorrect/xy/website-redesign/ClearCorrect_MainLogoV4.svg" style="max-width: 250px; margin-bottom: 10px;"/>
+                         <h3 style="color: #4267b2; font-style: italic; margin-bottom: 25px;">brostu betur með tannholti</h3>
+                         <a href="https://www.straumann.com/clearcorrect/en/patients.html" class="section-btn">Læra meira um ClearCorrect</a>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                         <img src="images/stoll.jpg" class="img-responsive" alt="Tannlæknastóll" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                         <img src="images/stoll.jpg" class="img-responsive" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                     </div>
                </div>
           </div>
      </section>
 
-
-     <!-- ABOUT & FACEBOOK -->
-     <section id="about" style="padding: 80px 0;">
+     <!-- ABOUT / STAFF / FACEBOOK -->
+     <section id="about">
           <div class="container">
-               <div class="row" style="display: flex; align-items: center; flex-wrap: wrap;">
+               <div class="row flex-center">
                     <div class="col-md-6 col-sm-12">
-                         <div class="about-info">
-                              <h2>Starfsfólk</h2>
-                              <p>Við leggjum metnað í góða þjónustu og fagleg vinnubrögð í rólegu umhverfi í hjarta Mosfellsbæjar.</p>
-                              <ul style="list-style: none; padding: 0; margin-top: 25px;">
-                                   <li style="margin-bottom: 15px;">
-                                        <h4 style="margin:0;">Katrín Rós Ragnarsdóttir</h4>
-                                        <p style="margin:0; color: #5bc0de;">Tannlæknir</p>
-                                   </li>
-                                   <li style="margin-bottom: 15px;">
-                                        <h4 style="margin:0;">Harpa Marín Þórarinsdóttir</h4>
-                                        <p style="margin:0; color: #5bc0de;">Tannlæknir</p>
-                                   </li>
-                                   <li style="margin-bottom: 15px;">
-                                        <h4 style="margin:0;">Hugrún Þorsteinsdóttir</h4>
-                                        <p style="margin:0; color: #5bc0de;">Aðstoðarmaður tannlæknis</p>
-                                   </li>
-                                   <li style="margin-bottom: 15px;">
-                                        <h4 style="margin:0;">Sara Fanney Hilmarsdóttir</h4>
-                                        <p style="margin:0; color: #5bc0de;">Aðstoðarmaður tannlæknis</p>
-                                   </li>
-                              </ul>
-                         </div>
+                         <h2>Starfsfólk</h2>
+                         <p>Við leggjum metnað í góða þjónustu og fagleg vinnubrögð í rólegu umhverfi í hjarta Mosfellsbæjar.</p>
+                         <ul style="list-style: none; padding: 0; margin-top: 25px;">
+                              <li><h4>Katrín Rós Ragnarsdóttir</h4><p style="color: #5bc0de;">Tannlæknir</p></li>
+                              <li><h4>Harpa Marín Þórarinsdóttir</h4><p style="color: #5bc0de;">Tannlæknir</p></li>
+                              <li><h4>Hugrún Þorsteinsdóttir</h4><p style="color: #5bc0de;">Aðstoðarmaður tannlæknis</p></li>
+                              <li><h4>Sara Fanney Hilmarsdóttir</h4><p style="color: #5bc0de;">Aðstoðarmaður tannlæknis</p></li>
+                         </ul>
                     </div>
                     <div class="col-md-6 col-sm-12 text-center">
-                         <div class="fb-page" data-href="https://www.facebook.com/tannholt" data-tabs="timeline" data-width="500" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                              <blockquote cite="https://www.facebook.com/tannholt" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tannholt">Tannlæknastofan Tannholt</a></blockquote>
+                         <div class="fb-container">
+                              <div class="fb-page" data-href="https://www.facebook.com/tannholt" data-tabs="timeline" data-width="500" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
                          </div>
                     </div>
                </div>
           </div>
      </section>
 
-
-     <!-- GOOGLE MAP -->
-     <section id="google-map" style="padding-bottom: 80px;">
+     <!-- MAP -->
+     <section id="google-map">
           <div class="container">
-               <div class="section-title text-center">
-                    <h2>Staðsetning</h2>
-               </div>
-               <div style="border: 5px solid #f2f2f2; border-radius: 15px; overflow: hidden; line-height: 0;">
+               <div class="section-title text-center"><h2>Staðsetning</h2></div>
+               <div style="border: 5px solid #f2f2f2; border-radius: 15px; overflow: hidden;">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1738.5278498329017!2d-21.702419783227363!3d64.16753898360466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d676bf70a9afd9%3A0xe88840d871ecbd03!2zw552ZXJob2x0IDcsIE1vc2ZlbGxzYsOmcg!5e0!3m2!1sen!2sis!4v1646698860773!5m2!1sen!2sis" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
                </div>
           </div>
      </section>
 
-
-     <!-- CONTACT FORM -->
+     <!-- CONTACT -->
      <section id="appointment">
           <div class="container">
                <div class="row">
                     <div class="col-md-offset-3 col-md-6 col-sm-12">
                          <form id="form">
-                              <div class="section-title">
-                                   <h2>Hafa samband</h2>
-                              </div>
+                              <div class="section-title"><h2>Hafa samband</h2></div>
                               <div class="row">
                                    <div class="col-md-6 col-sm-6">
-                                        <label for="name">Nafn</label>
-                                        <input type="text" class="form-control" id="from_name" name="name" placeholder="Nafn" required>
+                                        <label>Nafn</label>
+                                        <input type="text" class="form-control" id="from_name" name="name" required>
                                    </div>
                                    <div class="col-md-6 col-sm-12">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="from_email" name="email" placeholder="tölvupóstfang" required>
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" id="from_email" name="email" required>
                                    </div>
                                    <div class="col-md-12 col-sm-12">
-                                        <label for="telephone">Sími</label>
-                                        <input type="tel" class="form-control" id="from_phone" name="phone" placeholder="sími" required>
-                                        <label for="Message">Skilaboð</label>
-                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Skildu eftir skilaboð"></textarea>
-                                        <input type="submit" class="form-control" id="button" value="Senda skilaboð" style="background: #4267b2; color: #ffffff !important; border: none; font-weight: 600;">
+                                        <label>Sími</label>
+                                        <input type="tel" class="form-control" id="from_phone" name="phone" required>
+                                        <label>Skilaboð</label>
+                                        <textarea class="form-control" rows="5" id="message" name="message"></textarea>
+                                        <input type="submit" class="form-control" id="button" value="Senda skilaboð" style="background: #4267b2; color: #fff; border: none; font-weight: 600;">
                                    </div>
                               </div>
                          </form>
@@ -267,52 +143,35 @@
           </div>
      </section>
 
-
      <!-- FOOTER -->
-     <footer style="background: #1a1a1a; padding: 60px 0;">
+     <footer>
           <div class="container">
                <div class="footer-flex-container">
-                    
-                    <!-- Opnunartími block -->
                     <div class="opening-hours">
-                         <h4 style="color: #fff; margin-bottom: 20px;">Opnunartími</h4>
-                         <p style="color: #bbb; margin-bottom: 8px;">Mánudaga - föstudaga <span style="padding-left:10px; font-weight:600;">09:00 - 16:00</span></p>
-                         <p style="color: #bbb;">Laugardaga - Sunnudaga <span style="padding-left:10px; font-weight:600;">Lokað</span></p>
+                         <h4>Opnunartími</h4>
+                         <p>Mánudaga - föstudaga <span style="padding-left:10px; font-weight:600;">09:00 - 16:00</span></p>
+                         <p>Laugardaga - Sunnudaga <span style="padding-left:10px; font-weight:600;">Lokað</span></p>
                     </div> 
-
-                    <!-- Contact links block -->
-                    <div class="contact-links" style="margin-top: 5px;">
+                    <div class="contact-links">
                          <a href="tel:5666104" class="footer-contact-link"><i class="fa fa-phone"></i> 566-6104</a>
                          <a href="mailto:tannholt@tannholt.is" class="footer-contact-link"><i class="fa fa-envelope-o"></i> tannholt@tannholt.is</a>
                          <a href="https://www.facebook.com/tannholt" class="footer-contact-link"><i class="fa fa-facebook-square"></i> Facebook</a>
                     </div>
-
                </div>
-
-               <!-- Bottom Copyright -->
-               <div class="row">
-                    <div class="col-md-12 col-sm-12" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #333;">
-                         <div class="copyright-text text-center"> 
-                              <p style="color: #888;">Copyright &copy; 2026 Katrín Rós Ragnarsdóttir</p>
-                         </div>
-                    </div>
+               <div class="text-center" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #333;">
+                    <p style="color: #888;">Copyright &copy; 2026 Katrín Rós Ragnarsdóttir</p>
                </div>
           </div>
      </footer>
 
-     <!-- SCRIPTS -->
      <script src="js/jquery.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/jquery.sticky.js"></script>
-     <script src="js/jquery.stellar.min.js"></script>
      <script src="js/wow.min.js"></script>
      <script src="js/smoothscroll.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-     <script type="text/javascript">
-          emailjs.init('Bw56heIRu83bIhU0L')
-     </script>
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+     <script>emailjs.init('Bw56heIRu83bIhU0L')</script>
      <script src="js/skilabod.js"></script>
 </body>
 </html>

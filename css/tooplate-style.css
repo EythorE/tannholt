@@ -1,10 +1,12 @@
+/* Tannholt - Refined Responsive Styles */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 
 body {
-  background: #ffffff;
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
-  color: #555;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevents the white border on the right */
+    color: #555;
+    width: 100%;
 }
 
 /* --- TYPOGRAPHY --- */
@@ -13,79 +15,132 @@ h2 { font-size: 2.5em; margin-bottom: 20px; }
 h3 { font-size: 1.6em; margin-bottom: 15px; }
 p { font-size: 15px; line-height: 26px; color: #757575; }
 
-/* --- GENERAL --- */
-a { color: #393939; transition: all 0.3s ease; text-decoration: none !important; }
-a:hover { color: #5bc0de; }
-.section-padding { padding: 80px 0; }
-
-/* Global fix for background images - skip the ugly stuff */
-#about, #team, #appointment, #home, #google-map, .slider .item {
-  background-image: none !important;
-  background-color: #ffffff !important;
+/* --- HEADER --- */
+header {
+    background: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
 }
-
-/* --- HEADER (Fix for split location) --- */
-header { background: #f9f9f9; border-bottom: 1px solid #eee; padding: 12px 0; font-size: 12px; }
-header .location-icon { white-space: nowrap; } /* Prevents location splitting */
-header span { padding: 0 10px; color: #757575; display: inline-block; }
+header .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+header .left-side, header .right-side {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header .brand-name {
+    font-weight: 600;
+    color: #272727;
+    margin-right: 15px;
+}
+header span {
+    padding: 5px 10px;
+    color: #757575;
+    white-space: nowrap;
+}
 header i { color: #5bc0de; margin-right: 5px; }
+header a { color: #757575; }
 
-/* --- NAVIGATION & LOGO --- */
-.navbar-default { background: #ffffff; border: none; box-shadow: 0 2px 15px rgba(0,0,0,0.05); margin-bottom: 0; padding: 10px 0; }
-.navbar-brand { padding: 0 15px; height: auto; display: flex; align-items: center; }
-.navbar-brand img { 
-    height: 50px; 
-    width: auto; 
-    object-fit: contain; /* Fixes aspect ratio */
+/* --- NAVIGATION --- */
+.navbar-default {
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    margin-bottom: 0;
+}
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+.navbar-default .navbar-nav li.appointment-btn a {
+    background: #5bc0de;
+    color: #ffffff !important;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
-/* --- SECTIONS LAYOUT (Flex utility) --- */
-.flex-row { display: flex; align-items: center; flex-wrap: wrap; }
-.side-img { width: 100%; border-radius: 10px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+/* --- GLOBAL SECTIONS --- */
+section { padding: 80px 0; }
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Clear background images from all original sections */
+#home, #about, #team, #appointment, #google-map {
+    background-image: none !important;
+    background-color: #ffffff !important;
+}
 
 /* --- HOME / CLEARCORRECT --- */
-#home { padding: 80px 0; background: #fcfcfc !important; }
-.slogan-text { color: #4267b2; font-style: italic; margin-top: -10px; margin-bottom: 20px; display: block; font-size: 1.1em; }
-
-/* --- ABOUT / TEAM SUMMARY --- */
-#about { padding: 80px 0; border-top: 1px solid #f0f0f0; }
-.team-list-summary { list-style: none; padding: 0; margin: 20px 0; }
-.team-list-summary li { margin-bottom: 10px; font-weight: 500; color: #333; }
-.team-list-summary span { color: #5bc0de; font-size: 0.9em; display: block; font-weight: 400; }
-
-/* --- MAPS --- */
-.map-container { border: 5px solid #f2f2f2; border-radius: 15px; overflow: hidden; }
-#google-map h2 { margin-bottom: 30px; }
-
-/* --- BUTTONS & FORMS --- */
+#home { background: #fcfcfc !important; }
 .section-btn {
-  background: #4267b2;
-  color: #ffffff !important; /* Ensure white text */
-  border-radius: 50px;
-  padding: 14px 30px;
-  font-weight: 600;
-  display: inline-block;
+    background: #4267b2;
+    color: #ffffff !important;
+    border-radius: 50px;
+    padding: 14px 30px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
 }
 .section-btn:hover { background: #333; transform: translateY(-3px); }
 
-#appointment .form-control { background: #f9f9f9; border: 2px solid #f0f0f0; border-radius: 5px; margin-bottom: 15px; }
-#button { 
-    background: #4267b2 !important; 
-    color: #ffffff !important; /* Forces text to be visible */
-    font-weight: 600; 
-    border: none; 
-    height: 50px;
-    cursor: pointer;
-    transition: 0.3s;
+/* --- FACEBOOK APPLET FIX --- */
+.fb-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden; /* Stops it from breaking page width */
 }
-#button:hover { background: #333 !important; }
 
 /* --- FOOTER --- */
-footer { background: #1a1a1a; padding: 60px 0 30px; color: #bbb; }
-footer h4 { color: #fff; margin-bottom: 20px; }
-.border-top { border-top: 1px solid #333; margin-top: 40px; padding-top: 20px; }
+footer {
+    background: #1a1a1a;
+    padding: 60px 0;
+    color: #bbb;
+}
+.footer-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.footer-contact-link {
+    display: block;
+    margin-bottom: 12px;
+    color: #bbb;
+}
+.footer-contact-link i {
+    background: #393939;
+    border-radius: 50%;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 10px;
+}
 
+/* --- RESPONSIVE BREAKPOINTS --- */
 @media (max-width: 991px) {
-    .flex-row { text-align: center; }
-    .col-md-6 { margin-bottom: 30px; }
+    header .header-flex { justify-content: center; text-align: center; }
+    header .left-side, header .right-side { justify-content: center; width: 100%; }
+    .flex-center { text-align: center; }
+    .col-md-6 { margin-bottom: 40px; }
+    footer .footer-flex-container { gap: 30px; text-align: center; }
+}
+
+@media (max-width: 767px) {
+    h2 { font-size: 1.8em; }
+    section { padding: 40px 0; }
+    .navbar-brand img { height: 40px; }
 }
