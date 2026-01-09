@@ -57,9 +57,10 @@ header a { color: #757575; }
     border: none;
     box-shadow: 0 2px 15px rgba(0,0,0,0.05);
     margin-bottom: 0;
+    padding: 15px 0;
 }
 .navbar-brand img {
-    height: 50px;
+    height: 70px;
     width: auto;
 }
 .navbar-default .navbar-nav li.appointment-btn a {
